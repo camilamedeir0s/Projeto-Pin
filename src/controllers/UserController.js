@@ -23,7 +23,7 @@ module.exports = {
             if (!user) return res.status(400).json({error: "User not found"});
             return res.status(200).json(user);
         } catch (error) {
-            return res.status(400).json({error: error});
+            return res.status(400).json({error: error.message});
         }
     },
 
@@ -33,7 +33,7 @@ module.exports = {
             if (!users) return res.status(400).json({error: "Users not found"});
             return res.status(200).json(users);
         } catch (error) {
-            return res.status(400).json({error: error});
+            return res.status(400).json({error: error.message});
         }
     },
 
