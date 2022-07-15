@@ -29,7 +29,7 @@ module.exports = {
         allowNull: false,
         defaultValue: 1,
       },
-      status: {
+      is_complete: {
         type: Sequelize.BOOLEAN,
         allowNull: false,
         defaultValue: false,
